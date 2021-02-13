@@ -1,7 +1,7 @@
 <h1>My tasks list 🚀</h1>
-
+<%= link_to "Create a new task", new_path %>
 <ul>
   <% @tasks.each do |t| %>
-    <li><%= link_to t.title, index_path(t) %> - <%= t.completed %></li>
+    <li><%= link_to t.title, show_path(t) %> - <%= t.completed %></li>
   <% end %>
 </ul>

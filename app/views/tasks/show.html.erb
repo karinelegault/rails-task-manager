@@ -2,5 +2,5 @@
 
 <li><%= @task.title %> - <%= @task.details %> - <%= @task.completed %></li>
 <%= link_to "Back", tasks_path %>
-<%= link_to "Edit", show_path(t) %>
-<%= link_to "Delete", tasks_path, method: :delete, data: { confirm: 'Are you sure?' } %>
+<%= link_to "Edit", edit_path(@task) %>
+<%= link_to "Delete", delete_path(@task), method: :delete, data: { confirm: 'Are you sure?' } %>
